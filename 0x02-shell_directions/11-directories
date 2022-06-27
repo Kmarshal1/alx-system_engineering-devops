@@ -1,2 +1,2 @@
 #!/bin/bash
-find > -type d ! -path . -print | wc -l
+dirCount() { echo $(find "$1"* -maxdepth 0 -type d | wc -l);
